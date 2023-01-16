@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/fc7a0638-9b0d-4639-8267-6f356a817eaf/AppServices/subscriptions/fc7a0638-9b0d-4639-8267-6f356a817eaf/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/baseer-vpi",
+    "appService.deploySubpath": "."
+}
