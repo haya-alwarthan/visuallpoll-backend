@@ -37,31 +37,9 @@ predicted_images= {
 }
 
 }
-videos={1: {'name':'cry in the rain','likes':11,'views':100}}
-video_put_args= reqparse.RequestParser()
-video_put_args.add_argument("name", type=str,help="Name of Video",required=True, location='form')
-video_put_args.add_argument("likes", type=int,help="likes of the video",required=True, location='form')
-video_put_args.add_argument("views", type=int,help="Name of the video",required=True, location='form')
-
-def abort_req(video_id):
-    if video_id not in videos:
-        abort(404,messege= "No such a video")
 
 
-class Video(Resource):
 
-    def get(self, video_id):
-        abort_req(video_id)
-        return videos[video_id]
-        
-    def put(self,video_id):
-        args= video_put_args.parse_args()
-        videos[video_id]=args
-        return videos[video_id]
-    
-    def delete(video_id):
-        if video_id  not in videos:
-            abort(404,messege= "No such a video")
 
 class PollutionItem(Resource):
 
@@ -69,14 +47,6 @@ class PollutionItem(Resource):
         print(pollution_data[id])
         return pollution_data[id]
         
-    # def put(self,id):
-    #     args= video_put_args.parse_args()
-    #     videos[id]=args
-    #     return  pollution_data[id]
-    
-    # def delete(video_id):
-    #     if video_id  not in videos:
-    #         abort(404,messege= "No such a video")
 
 
 class PollutionList(Resource):
@@ -101,9 +71,7 @@ class StatusTotal(Resource):
 
 
 
-# api.add_resource(HelloWorld,'/hello')
 # add a paramete to the request
-api.add_resource(Video,'/video/<int:video_id>')
 api.add_resource(PollutionItem,'/api/pollution/<string:id>')
 api.add_resource(PollutionList,'/api/pollutions/<string:offset>/<string:limit>')
 api.add_resource(ClassesStats,'/api/stats/classes')

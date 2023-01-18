@@ -1,3 +1,5 @@
+import math
+import random
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -41,6 +43,8 @@ def generate_dict():
         dict[row['image_path']]['lon']=row['long']
         dict[row['image_path']]['classes'].add(row['class_id'])
         dict[row['image_path']]['image_path']=row['image_path']
+        dict[row['image_path']]['title']=generateRandomTitle()
+
 
         
 def dict_to_json():
@@ -58,6 +62,11 @@ def dict_to_json():
         raise Exception("did not write succefully")
     f.close()
     
+def generateRandomTitle():
+    ran =  random.randint(0,10)
+    lis=['النسيم 19344','النسيم 47922','العليا 2344','هجر 28495','الضاحية 4789','1245 طريق الملك فهد','حي النعمان3945 ','9435 طريق الخليج','8458 شارع أبي بكر الصديق','طريق الملك عبدالله 4345','طريق عمر ابن الخطاب 2664']
+    return lis[ran]
+   
 
 
 generate_dict()  
