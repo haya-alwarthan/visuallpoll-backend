@@ -94,8 +94,10 @@ class PhotoUpload(Resource):
         photo = data['file']
 
         if photo:
+
             filename =  data['filename']
             photo.save(os.path.join(UPLOAD_FOLDER,filename))
+     
             img= draw_bounding_box(os.path.join(UPLOAD_FOLDER,filename))
             cv2.imwrite(os.path.join(UPLOAD_FOLDER,filename),img)
             
