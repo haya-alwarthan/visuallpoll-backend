@@ -70,5 +70,3 @@ def getStatusTotal():
         for key,value in data.items():
             total[outter]+=value[outter]
     return total
-
-print(getStatusTotal())
