@@ -1,7 +1,8 @@
 # Steps needed to run the project locally: 
 1. extract the content of static.zip
 ensure you have similar file structure
-![image](https://user-images.githubusercontent.com/111225040/213848292-7a081c52-b079-42a1-b6a3-0bdcd38aeb66.png)
+![image](https://user-images.githubusercontent.com/111225040/213848310-731759d1-b2f5-449e-8317-5ebc89ab2d0a.png)
+
 
 2. Create a virtual enviroment with python verion>=3.7 & <3.11(3.9 is preferred) and run install the requirements with commands:
 ```
