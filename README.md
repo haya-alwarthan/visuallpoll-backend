@@ -27,7 +27,7 @@ Ensure pip is already installed in your virtual environment(on windows machine)
 py -m ensurepip --upgrade 
 ```
 # Limitations of current funtionalities
-1. If you refreshed the page and faced 404 error, please redirect to the root erul. (ex.baseerthon.pythonanywhere.com/) 
+1. If you refreshed the page and faced 404 error, please redirect to the root url. (ex.baseerthon.pythonanywhere.com/) 
 2. In the login page, you should be able to navigate to the website by clicking 'الدخول' button without any credentials. 
 3. The object detection feature work properly only locally, not in production.
 
