@@ -1,9 +1,9 @@
-#Baseer | Webapp
+# Baseer | Webapp
 
-##Object Detection Model
+## Object Detection Model
 https://github.com/asalhi/Smartathon-Baseer
 
-##Demo Website/s
+## Demo Website/s
 Main URL : baseerthon.pythonanywhere.com 
 Alt URL: baseer-baseerthon.pythonanywhere.com 
 
