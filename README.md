@@ -4,8 +4,8 @@
 https://github.com/asalhi/Smartathon-Baseer
 
 ## Demo Website/s
-Main URL : baseerthon.pythonanywhere.com 
-Alt URL: baseer-baseerthon.pythonanywhere.com 
+- Main URL : [baseerthon.pythonanywhere.com ](https://baseerthon.pythonanywhere.com/)
+- Alt URL: [baseer-baseerthon.pythonanywhere.com ](https://baseer-baseerthon.pythonanywhere.com/)
 
 ## Steps needed to run the project locally: 
 1. extract the content of static.zip, ensure you have similar folder structure
